@@ -1,0 +1,137 @@
+@import url('https://googleapis.com');
+
+.apparel-portfolio-page {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #22304A; 
+    background-color: #F7F4EF; 
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.apparel-portfolio-page * {
+    box-sizing: inherit;
+}
+
+.apparel-portfolio-page h1,
+.apparel-portfolio-page h2,
+.apparel-portfolio-page h3 {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; 
+    color: #22304A; 
+    margin-top: 0;
+}
+
+.apparel-portfolio-page header {
+    padding: 1.5rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.apparel-portfolio-page header nav a {
+    color: #6E6E6E; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.apparel-portfolio-page header nav a:hover {
+    color: #22304A; 
+}
+
+.apparel-portfolio-page main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+}
+
+.apparel-portfolio-page article {
+    margin-bottom: 4rem;
+}
+
+.apparel-portfolio-page article h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #A9B7A3; 
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.apparel-portfolio-page article p {
+    font-size: 1.15rem;
+    max-width: 75ch; 
+    margin-bottom: 1.5rem;
+}
+
+.apparel-portfolio-page section {
+    background-color: #ffffff; 
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 110, 110, 0.1);
+    box-shadow: 0 4px 12px rgba(34, 48, 74, 0.04);
+}
+
+.apparel-portfolio-page section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.apparel-portfolio-page section > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.apparel-portfolio-page section > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.apparel-portfolio-page section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.apparel-portfolio-page img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #6E6E6E; 
+    object-fit: cover;
+}
+
+.apparel-portfolio-page section div p {
+    font-size: 0.95rem;
+    color: #6E6E6E; 
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+.apparel-portfolio-page footer {
+    border-top: 1px solid rgba(110, 110, 110, 0.2);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6E6E6E;
+}
+
+@media (min-width: 768px) {
+  
+    .apparel-portfolio-page section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .apparel-portfolio-page section > div {
+        margin-bottom: 0; 
+    }
+
+    .apparel-portfolio-page img {
+        height: 350px;
+    }
+}
