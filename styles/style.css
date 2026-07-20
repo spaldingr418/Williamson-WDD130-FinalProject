@@ -42,6 +42,7 @@ nav a {
   text-decoration: none;
   margin-left: 2rem;
   font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -55,8 +56,11 @@ nav a:hover {
   color: var(--primary-color);
 }
 
-.hero h1 {
+h1, h2, h3, h4, h5, h6{
   font-family: "Comic Sans MS", cursive;
+}
+
+.hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -106,6 +110,85 @@ footer {
   color: white;
 }
 
+main {
+  text-align:center; 
+  margin-left:25px; 
+  margin-right:25px;
+  color: #22304A; 
+  background-color: #F7F4EF; 
+  line-height: 1.7;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.h3{
+  color: #22304A; 
+  margin-top: 0;
+}
+
+article{
+  margin-bottom: 4rem;
+}
+
+article h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #A9B7A3; 
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.apparel section {
+    background-color: #ffffff; 
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 110, 110, 0.1);
+    box-shadow: 0 4px 12px rgba(34, 48, 74, 0.04);
+}
+
+.apparel section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.apparel section > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.apparel > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.apparel section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.apparel img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #6E6E6E; 
+    object-fit: cover;
+}
+
+.apparel section div p {
+    font-size: 0.95rem;
+    color: #6E6E6E; 
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column;
@@ -122,5 +205,19 @@ footer {
 
   .hero h1 {
     font-size: 2.2rem;
+  }
+
+  .apparel section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+  .apparel section > div {
+      margin-bottom: 0; 
+  }
+
+  .apparel img {
+      height: 350px;
   }
 }
